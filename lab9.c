@@ -117,9 +117,7 @@ int main(void)
 		struct HashType* temp=&HashTable[i];
 
 		while(temp->next!=NULL)
-		{
 			temp=temp->next;
-		}
 
 		struct HashType* new=(struct HashType*)malloc(sizeof(struct HashType));
 		new->data=record;
